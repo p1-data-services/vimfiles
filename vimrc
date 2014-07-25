@@ -41,3 +41,11 @@ runtime! config/platform.vim
 
 silent! source ~/.vimrc.local
 
+set wildignore+=*/Godeps/*,*/phd-cf/phd-release/*,*/phd-cf/dummy-phd-release/*
+map <D-t> :tabnew<CR>
+let g:ctrlp_switch_buffer = '0'
+autocmd! GUIEnter * set vb t_vb=
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_always_populate_loc_list = 1
+map <D-l> :lfirst<CR>
+
